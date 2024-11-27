@@ -1,4 +1,4 @@
-*{
+* {
     /* box-sizing: border-box; */
     margin: 0;
     padding: 0;
@@ -7,49 +7,81 @@
     font-family: Verdana, sans-serif;
 }
 
-.container{
+.container {
     margin: 30px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.content{
+.content {
     background-color: aqua;
     text-align: center;
+    width: 50%;
 }
 
-.icon{
+.icon {
     border-radius: 50%;
     width: 200px;
 }
 
-h1{
+h1 {
     background-color: blueviolet;
 }
 
-a{
-    background-color: chocolate;
-    text-decoration: none;
-    padding: 10px;    
-}
-a:hover{
-    background-color: cadetblue;
+.socials-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    overflow: hidden;
 }
 
-.link-button{
+a:link,
+a:visited {
+    background-color: #f44336;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    background-color: red;
+}
+
+a[href="https://github.com/digi-wulf"]:link,
+a[href="https://github.com/digi-wulf"]:visited{
+    background-color:darkgoldenrod;
+}
+a[href="https://github.com/digi-wulf"]:hover,
+a[href="https://github.com/digi-wulf"]:active {
+    background-color:#f5b411;
+}
+
+.link-button {
     margin: 10px;
     padding: 20px;
     background-color: brown;
 }
 
-p{
+p {
     background-color: gray;
     padding: 20px;
     /* margin: 10px; */
     text-align: justify;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 700px) {
+    .content{
+        width: 100%;
+    }
     .icon {
-      width: 70%; /* The width is 70%, when the viewport is 500px or smaller */
+        width: 70%;
+        /* The width is 70%, when the viewport is 500px or smaller */
     }
 }
