@@ -2,9 +2,17 @@
     /* box-sizing: border-box; */
     margin: 0;
     padding: 0;
-    background-color: black;
-    color: white;
+    color: #EEEEEE;
     font-family: Verdana, sans-serif;
+}
+
+body{
+    
+    background-color: #222831;
+    /* background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-position: 10%;
+    background-size: cover; */
 }
 
 .container {
@@ -16,18 +24,26 @@
 }
 
 .content {
-    background-color: aqua;
+    background-color: #31363F;
     text-align: center;
-    width: 50%;
+    max-width: 600px;
+    width: 70%;
+    border-radius: 8px;
 }
 
 .icon {
     border-radius: 50%;
     width: 200px;
+    margin: 40px;
+    vertical-align: middle;
+    box-shadow: 0px 0px 50px rgb(85, 122, 124);
 }
 
 h1 {
-    background-color: blueviolet;
+    /* background-color: rgb(77, 77, 77); */
+    font-size: 40px;
+    padding: 20px;
+    /* border-bottom: #EEEEEE double 10px; */
 }
 
 .socials-list {
@@ -35,14 +51,18 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    vertical-align: middle;
     overflow: hidden;
+}
+
+a{
+    color: #EEEEEE;
+    font-size: 18px;
 }
 
 a:link,
 a:visited {
-    background-color: #f44336;
-    color: white;
+    background-color: #557a7c;
     width: 100%;
     padding: 20px;
     text-align: center;
@@ -51,37 +71,34 @@ a:visited {
 
 a:hover,
 a:active {
-    background-color: red;
+    background-color: #76ABAE;
 }
 
 a[href="https://github.com/digi-wulf"]:link,
-a[href="https://github.com/digi-wulf"]:visited{
-    background-color:darkgoldenrod;
-}
-a[href="https://github.com/digi-wulf"]:hover,
-a[href="https://github.com/digi-wulf"]:active {
-    background-color:#f5b411;
+a[href="https://github.com/digi-wulf"]:visited {
+    background-color: rgb(23, 105, 7);
 }
 
-.link-button {
-    margin: 10px;
-    padding: 20px;
-    background-color: brown;
+a[href="https://github.com/digi-wulf"]:hover,
+a[href="https://github.com/digi-wulf"]:active {
+    background-color: rgb(38, 168, 12);
 }
 
 p {
-    background-color: gray;
-    padding: 20px;
+    /* background-color: gray; */
+    padding: 34px;
     /* margin: 10px; */
     text-align: justify;
+    font-size: 18px;
 }
 
 @media screen and (max-width: 700px) {
-    .content{
+    .content {
         width: 100%;
     }
+
     .icon {
         width: 70%;
-        /* The width is 70%, when the viewport is 500px or smaller */
+        padding: 0px 40px 40px 40px;
     }
 }
