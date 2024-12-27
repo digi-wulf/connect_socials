@@ -6,9 +6,11 @@
     font-family: Verdana, sans-serif;
 }
 
-body{
-    
+body {
+
     background-color: #222831;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     /* background-image: url("images/background.png");
     background-repeat: no-repeat;
     background-position: 10%;
@@ -24,7 +26,7 @@ body{
 }
 
 .content {
-    background-color: #31363F;
+    background-color: rgb(49, 54, 63);
     text-align: center;
     max-width: 600px;
     width: 70%;
@@ -39,7 +41,7 @@ body{
     box-shadow: 0px 0px 50px rgb(85, 122, 124);
 }
 
-h1 {
+.title {
     /* background-color: rgb(77, 77, 77); */
     font-size: 40px;
     padding: 20px;
@@ -55,7 +57,7 @@ h1 {
     overflow: hidden;
 }
 
-a{
+a {
     color: #EEEEEE;
     font-size: 18px;
 }
@@ -99,6 +101,12 @@ p {
 
     .icon {
         width: 70%;
-        padding: 0px 40px 40px 40px;
+        margin: 0px 40px 40px 40px;
+    }
+    .title{
+        font-size: 8vw;
+    }
+    p{
+        font-size: 4vw;
     }
 }
