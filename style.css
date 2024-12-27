@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    margin: 30px;
+    margin: 30px 30px 60px 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +35,7 @@ body {
 
 .icon {
     border-radius: 50%;
-    width: 200px;
+    width: 300px;
     margin: 40px;
     vertical-align: middle;
     box-shadow: 0px 0px 50px rgb(85, 122, 124);
@@ -104,6 +104,19 @@ a[href="https://github.com/digi-wulf"]:active {
 
 .lower-txt > p{
     padding: 10px;
+}
+
+footer{
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 20px;
+    max-width: 600px;
+
+    margin: 30px auto;
+
+    padding-top: 30px;
+    border-top: #ffffff solid 1px;
 }
 
 /* Tablet View */
