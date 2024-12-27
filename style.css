@@ -48,6 +48,14 @@ body {
     /* border-bottom: #EEEEEE double 10px; */
 }
 
+.upper-txt {
+    /* background-color: gray; */
+    padding: 0px 34px 34px 34px;
+    /* margin: 10px; */
+    text-align: justify;
+    font-size: 18px;
+}
+
 .socials-list {
     display: flex;
     flex-direction: column;
@@ -86,14 +94,19 @@ a[href="https://github.com/digi-wulf"]:active {
     background-color: rgb(38, 168, 12);
 }
 
-p {
+.lower-txt {
     /* background-color: gray; */
-    padding: 34px;
+    padding: 24px;
     /* margin: 10px; */
     text-align: justify;
     font-size: 18px;
 }
 
+.lower-txt > p{
+    padding: 10px;
+}
+
+/* Tablet View */
 @media screen and (max-width: 700px) {
     .content {
         width: 100%;
@@ -106,7 +119,7 @@ p {
     .title{
         font-size: 8vw;
     }
-    p{
+    .upper-txt, a, .lower-txt{
         font-size: 4vw;
     }
 }
