@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Miriam+Libre:wght@400..700&display=swap');
+
 * {
     /* box-sizing: border-box; */
     margin: 0;
@@ -7,14 +9,8 @@
 }
 
 body {
-
-    background-color: #222831;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-    /* background-image: url("images/background.png");
-    background-repeat: no-repeat;
-    background-position: 10%;
-    background-size: cover; */
+    background-color: #0E0B0C;
+    background-image: url("images/background.png");
 }
 
 .container {
@@ -26,11 +22,13 @@ body {
 }
 
 .content {
-    background-color: rgb(49, 54, 63);
+    background-color: #122441;
     text-align: center;
     max-width: 600px;
     width: 70%;
     border-radius: 8px;
+    padding: 0px 0px 20px 0px;
+    box-shadow: 0px 0px 30px #00000069;
 }
 
 .icon {
@@ -38,7 +36,7 @@ body {
     width: 300px;
     margin: 40px;
     vertical-align: middle;
-    box-shadow: 0px 0px 50px rgb(85, 122, 124);
+    box-shadow: 0px 0px 30px #B14706;
 }
 
 .title {
@@ -47,14 +45,31 @@ body {
     padding: 20px;
     /* border-bottom: #EEEEEE double 10px; */
 }
+/* .libre-franklin-title {
+    font-family: "Libre Franklin", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 40px;
+    padding: 20px;
+  } */
 
 .upper-txt {
     /* background-color: gray; */
     padding: 0px 34px 24px 34px;
     /* margin: 10px; */
-    text-align: justify;
+    text-align: center;
     font-size: 18px;
 }
+/* .miriam-libre-upper-txt {
+    font-family: "Miriam Libre", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0px 34px 24px 34px;
+    text-align: center;
+    font-size: 18px;
+  } */
 
 .socials-list {
     display: flex;
@@ -65,45 +80,50 @@ body {
     overflow: hidden;
 }
 
-a {
+.socials-list-btn {
     color: #EEEEEE;
     font-size: 18px;
 }
 
-a:link,
-a:visited {
-    background-color: #557a7c;
+.socials-list-btn:link,
+.socials-list-btn:visited {
+    background-color: #A33D15;
     width: 100%;
     padding: 20px;
     text-align: center;
     text-decoration: none;
+    transition: .3s;
 }
 
-a:hover,
-a:active {
-    background-color: #76ABAE;
+.socials-list-btn:hover,
+.socials-list-btn:active {
+    background-color: #D28C00;
 }
 
-a[href="https://github.com/digi-wulf"]:link,
-a[href="https://github.com/digi-wulf"]:visited {
-    background-color: rgb(23, 105, 7);
+.socials-list-btn[href="https://digi-wulf.github.io/portfolio/"]:link,
+.socials-list-btn[href="https://digi-wulf.github.io/portfolio/"]:visited {
+    background-color: #084F71;
+    transition: .3s;
 }
 
-a[href="https://github.com/digi-wulf"]:hover,
-a[href="https://github.com/digi-wulf"]:active {
-    background-color: rgb(38, 168, 12);
+.socials-list-btn[href="https://digi-wulf.github.io/portfolio/"]:hover,
+.socials-list-btn[href="https://digi-wulf.github.io/portfolio/"]:active {
+    background-color: #2C9DC3;
 }
 
 .lower-txt {
     /* background-color: gray; */
-    padding: 24px;
+    padding: 18px 0 0 0;
     /* margin: 10px; */
-    text-align: justify;
+    text-align: center;
     font-size: 18px;
 }
 
-.lower-txt > p{
-    padding: 10px;
+.logos{
+    vertical-align: middle;
+    width: 6%;
+    height: auto;
+    color: #ffffff;
 }
 
 footer{
@@ -111,8 +131,8 @@ footer{
     text-align: center;
     text-transform: uppercase;
     line-height: 20px;
+    width: 64%;
     max-width: 600px;
-
     margin: 30px auto;
 
     padding-top: 30px;
@@ -121,6 +141,9 @@ footer{
 
 /* Tablet View */
 @media screen and (max-width: 700px) {
+    .container{
+        margin: 60px 30px 60px 30px;
+    }
     .content {
         width: 100%;
     }
@@ -134,5 +157,8 @@ footer{
     }
     .upper-txt, a, .lower-txt{
         font-size: 4vw;
+    }
+    footer{
+        width: 90%;
     }
 }
