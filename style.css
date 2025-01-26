@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    margin: 30px 30px 60px 30px;
+    margin: 0px 30px 60px 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,6 +157,9 @@ footer{
     }
     .upper-txt, a, .lower-txt{
         font-size: 4vw;
+    }
+    .logos{
+        width: 10%;
     }
     footer{
         width: 90%;
